@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Rys Smir](https://up.htmlacademy.ru/htmlcss/38/user/1478577).
-* Наставник: `Анна Лисененкова`.
+* Наставник: `Анна Лисененкова` (https://htmlacademy.ru/profile/ankhena).
 
 ---
 
