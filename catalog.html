@@ -23,7 +23,7 @@
                     <a class="navigation-link" href="catalog.html">Гостиницы</a>
                 </li>
             </ul>
-            <ul class="navigation-list navigation-user">
+            <ul class="navigation-user">
                 <li class="navigation-item">
                     <a class="navigation-link" href="#">
                         <span class="visually-hidden">
@@ -65,7 +65,7 @@
           </ul>
     </header>
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-            <form action="#" method="get">
+            <form class="catalog-filter-form" action="#" method="get">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Инфраструктура:</legend>
                     <ul class="catalog-filter-list">
@@ -87,7 +87,7 @@
                     </ul>
                 </fieldset>
                 <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Инфраструктура:</legend>
+                    <legend class="catalog-filter-title">Тип жилья:</legend>
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                             <label class="control">
@@ -117,6 +117,7 @@
       </section>
 
             <section class="product-search">
+              <div class="product-search-container">
                 <h2 class="product-search-title">Найдено страниц:38</h2>
               <form>
                 <select class="select-control" aria-label="Сортировка">
@@ -135,6 +136,7 @@
                 <a href="#">
                     <span class="visually-hidden">Показать список</span>
                 </a>
+              </div>
                 <ul class="product-list">
                     <li class="product-card">
                         <a class="product-card-link" href="#">
@@ -230,6 +232,7 @@
     </main>
 
     <footer class="page-footer">
+      <div class="footer-container">
         <section class="social">
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="social-list">
@@ -250,10 +253,11 @@
                 </li>
             </ul>
         </section>
-        <a href="tel:+7(812)8121212">+7 (812) 812-12-12</a>
-        <a href="https://htmlacademy.ru/study">
+        <a class="telephone" href="tel:+7(812)8121212">+7 (812) 812-12-12</a>
+        <a class="logo-html" href="https://htmlacademy.ru/study">
             <img src="images/logo-academy.svg" width="114.9px" height="32.9px" alt="Лого html Academy">
         </a>
+      </div>
     </footer>
   </div>
 
