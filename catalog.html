@@ -24,15 +24,15 @@
                 </li>
             </ul>
             <ul class="navigation-user">
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">
+                <li class="navigation-user-item">
+                    <a class="navigation-user-link" href="#">
                         <span class="visually-hidden">
                             Поиск
                         </span>
                     </a>
                 </li>
-                <li class="navigation-item">
-                    <a class="navigation-link" href="#">
+                <li class="navigation-user-item">
+                    <a class="navigation-user-link" href="#">
                         <span class="visually-hidden">
                             Избранное
                         </span>
@@ -41,8 +41,8 @@
                         </span>
                     </a>
                 </li>
-                <li class="navigation-item">
-                    <button class="navigation-button">
+                <li class="navigation-user-item">
+                    <button class="navigation-user-link navigation-button">
                         Хочу сюда!
                     </button>
                 </li>
@@ -111,32 +111,42 @@
                     <input type="number" name="price">
                     <input type="number" name="price">
                 </fieldset>
-                <button class="button-filter button-apply" type="submit">Применить</button>
-                <button class="button-filter button-reset" type="reset">Сбросить</button>
+                <div class="button-filter-wrapper">
+                  <button class="button-filter button-apply" type="submit">Применить</button>
+                  <button class="button-filter button-reset" type="reset">Сбросить</button>
+                </div>
             </form>
       </section>
 
             <section class="product-search">
               <div class="product-search-container">
                 <h2 class="product-search-title">Найдено страниц:38</h2>
-              <form>
-                <select class="select-control" aria-label="Сортировка">
-                  <option value="popular">Сначала популярные</option>
-                  <option value="cheap">Сначала дешёвые</option>
-                  <option value="expensive">Сначала дорогие</option>
-                </select>
-              </form>
-
-                <a href="#">
-                    <span class="visually-hidden">Показать карточки</span>
-                </a>
-                <a href="#">
-                    <span class="visually-hidden">Показать иконку</span>
-                </a>
-                <a href="#">
-                    <span class="visually-hidden">Показать список</span>
-                </a>
+                <form>
+                  <select class="select-control" aria-label="Сортировка">
+                    <option value="popular">Сначала популярные</option>
+                    <option value="cheap">Сначала дешёвые</option>
+                    <option value="expensive">Сначала дорогие</option>
+                  </select>
+                </form>
+                <ul class="product-search-list">
+                  <li class="product-search-item">
+                    <a class="product-search-link" href="#">
+                      <span class="visually-hidden">Показать карточки</span>
+                    </a>
+                  </li>
+                  <li class="product-search-item">
+                    <a class="product-search-link" href="#">
+                      <span class="visually-hidden">Показать иконку</span>
+                    </a>
+                  </li>
+                  <li class="product-search-item">
+                    <a class="product-search-link" href="#">
+                      <span class="visually-hidden">Показать список</span>
+                    </a>
+                  </li>
+                </ul>
               </div>
+
                 <ul class="product-list">
                     <li class="product-card">
                         <a class="product-card-link" href="#">
@@ -198,66 +208,75 @@
                         <p class="product-card-rating">Рейтинг: 5,0</p>
                     </li>
                 </ul>
-                <ul class="pagination">
+            </section>
+
+              <section class="pagination">
+                <ul class="pagination-list">
                     <li class="pagination-item">
-                        <a class="pagination-link product-current" href="#">1</a>
+                        <a class="pagination-link pagination-link-current" href="#">1</a>
                     </li>
                     <li class="pagination-item">
-                        <a class="pagination-link product-current" href="#">2</a>
+                        <a class="pagination-link" href="#">2</a>
                     </li>
                     <li class="pagination-item">
-                        <a class="pagination-link product-current" href="#">3</a>
+                        <a class="pagination-link" href="#">3</a>
                     </li>
                     <li class="pagination-item">
-                        <a class="pagination-link product-current" href="#">4</a>
+                        <a class="pagination-link" href="#">4</a>
                     </li>
                     <li class="pagination-item">
-                        <a class="pagination-link product-current" href="#">10</a>
+                      <a class="pagination-link pagination-more" href="#">...</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-link" href="#">10</a>
                     </li>
                 </ul>
-            </section>
+              </section>
+
 
 
             <section class="subscription">
+              <div class="subscription-container">
                 <h2 class="visually-hidden">Подписка</h2>
                 <p class="subscription-discription subtitle">Подпишитесь на рассылку</p>
                 <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!
                 </p>
-                <form action="#" method="get">
-                    <input type="email" name="e-mail" placeholder="Ваш e-mail">
-                    <button type="submit" class="subscription-button">Подписаться</button>
+                <form class="subscription-form" action="#" method="get">
+                  <label class="visually-hidden" for="email-subscribe">Введите Ваш email</label>
+                  <input class="subscription-field" type="email" name="e-mail" placeholder="Ваш e-mail">
+                  <button type="submit" class="subscription-button">Подписаться</button>
                 </form>
+              </div>
+
             </section>
 
     </main>
 
     <footer class="page-footer">
-      <div class="footer-container">
-        <section class="social">
-            <h2 class="visually-hidden">Социальные сети</h2>
+      <section class="social">
+        <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="social-list">
                 <li class="social-item">
-                    <a class="social-button" href="#">
+                    <a class="social-icon" href="#">
                         <span class="visually-hidden">Вконтакте</span>
                     </a>
                 </li>
                 <li class="social-item">
-                    <a class="social-button" href="#">
+                    <a class="social-icon" href="#">
                         <span class="visually-hidden">Telegram</span>
                     </a>
                 </li>
                 <li class="social-item">
-                    <a class="social-button" href="#">
+                    <a class="social-icon" href="#">
                         <span class="visually-hidden">YouTube</span>
                     </a>
                 </li>
             </ul>
-        </section>
-        <a class="telephone" href="tel:+7(812)8121212">+7 (812) 812-12-12</a>
-        <a class="logo-html" href="https://htmlacademy.ru/study">
-            <img src="images/logo-academy.svg" width="114.9px" height="32.9px" alt="Лого html Academy">
-        </a>
-      </div>
+      </section>
+      <a class="telephone" href="tel:+7(812)8121212">+7 (812) 812-12-12</a>
+      <a class="logo-html" href="https://htmlacademy.ru/study">
+          <img src="images/logo-academy.svg" width="114.9px" height="32.9px" alt="Лого html Academy">
+      </a>
     </footer>
   </div>
 
